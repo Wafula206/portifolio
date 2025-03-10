@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MY PORTIFORLIO</h1>
+    </header>
+
+    <nav>
+        <button onclick="showContent('home')">Home</button>
+        <button onclick="showContent('about')">About</button>
+        <button onclick="showContent('projects')">Projects</button>
+        <button onclick="showContent('contact')">Contact</button>
+    </nav>
+
+    <section id="home" class="content active">
+        <h2>Welcome to My Portfolio</h2>
+        <img src="images/bryn.jpg" alt="Brian Wafula" class="profile-img">
+        <p>Hi, I’m Brian Wafula, a passionate penetration tester and ethical hacker.</p>
+        <p>This portfolio showcases my lab setup, projects, and skills in cybersecurity.</p>
+        <p>I am also passionate about Python programming, database management, and networking.</p>
+    </section>
+
+    <section id="about" class="content">
+        <h2>About Me</h2>
+        <p>I’m a cybersecurity enthusiast specializing in penetration testing.</p>
+        <h3>Education Background</h3>
+        <p><strong>Karatina University</strong></p>
+        <p>BSc in Information Technology</p>
+    </section>
+
+    <section id="projects" class="content">
+        <h2>My Projects</h2>
+        <ul>
+            <li>School Management System</li>
+            <li>Class Management System</li>
+            <li>Loan Approval System</li>
+            <li>Penetration Testing Lab Environment</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact Me</h2>
+        <p>Email: wafulabrian206@gmail.com</p>
+        <p>Phone: +254798532947</p>
+        <P>Github: Wafula206</P>
+    </section>
+
+    <script>
+        function showContent(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+    <footer>
+        <p>&copy; 2025 Brian Wafula. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
