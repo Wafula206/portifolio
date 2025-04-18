@@ -1,0 +1,35 @@
+# Ignore system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore node and package files (if you add web tools later)
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Ignore build and cache files
+dist/
+build/
+.cache/
+*.log
+
+# Ignore personal IDE settings
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore environment and sensitive files
+*.env
+*.pem
+*.crt
+*.key
+
+# Ignore image editor files or backups
+*.psd
+*.xcf
+*.ai
+*.bak
